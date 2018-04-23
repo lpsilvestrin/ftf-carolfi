@@ -1,11 +1,11 @@
 #!/bin/bash
 echo "SDCs: "
-grep -r -i SDC summary-carolfi.log |wc -l
+grep -i $1 summary-carolfi.log | grep -i $2 | grep -i SDC |wc -l
 echo "Hangs: "
-grep -r -i HANG summary-carolfi.log |wc -l
+grep -i $1 summary-carolfi.log | grep -i $2 | grep -i HANG |wc -l
 echo "Masked: "
-grep -r -i Masked summary-carolfi.log |wc -l
+grep -i $1 summary-carolfi.log | grep -i $2 | grep -i Masked |wc -l
 echo "Failed: "
-grep -r -i Failed summary-carolfi.log |wc -l
+grep -i $1 summary-carolfi.log | grep -i $2 | grep -i Failed |wc -l
 
 

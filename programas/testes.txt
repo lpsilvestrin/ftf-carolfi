@@ -1,0 +1,3 @@
+01
+    char *A = "Eu quero tchu, eu quero tcha";
+    char *B = "Tchu tcha tcha tchu tchu tcha";

@@ -7,7 +7,7 @@ import sys
 confFile = sys.argv[1]
 
 timestampFile = "summary-carolfi.log"
-timestampMaxDiff=60*5 # in seconds
+timestampMaxDiff=60 # in seconds
 
 def killall():
     os.system("killall -9 fault_injector.py")
